@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- this is killing my drop down-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<header style="background-color:rgb(255, 255, 255);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\index.html">
+            <h4>Latitude</h4>
+            </a>
+        </div>
+            <div class="col-md-5"></div>
+            <div class="col-md-3">
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Plots
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">Max Temperature</a>
+                                <a href="#">Humidity</a>
+                                <a href="#">Cloudiness</a>
+                                <a href="#">Wind Speed</a>
+                            </div>
+                    </div> 
+                    <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Comparison.html">Comparison</a>
+                    <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Data.html">Data</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<body style="background-color:rgb(192, 192, 192);">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div style="background-color:rgb(255, 255, 255);">
+                <h3>Wind Speed</h3>
+                <hr>
+                <br>            
+                <img src="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\WeatherPy Homework\output\City Latitude vs. Wind Speed.png" width="600">
+                <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                
+            </div>
+            <br>
+            <br>
+        </div>
+            <div class="col-md-4">
+                <div style="background-color:rgb(255, 255, 255);">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <div class="row">
+                            <div class="col-md-6">
+                                <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Max Temp.html">
+                                    <img src="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\WeatherPy Homework\output\City Latitude vs. Max Tempurature.png" alt="City Latitude vs. Max Tempurature" style="width:175px;height:150px;border:0;">
+                                </a>
+                                    <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Cloudiness.html">
+                                        <img src="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\WeatherPy Homework\output\City Latitude vs. Cloudiness.png" alt="City Latitude vs. Cloudiness" style="width:175px;height:150px;border:0;">
+                                    </a>
+                            </div>
+                               
+                                <div class="col-md-6">
+                                    <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Humidity.html">
+                                        <img src="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\WeatherPy Homework\output\City Latitude vs. Humidity.png" alt="City Latitude vs. Humidity" style="width:175px;height:150px;border:0;">
+                                    </a>
+                                        <a href="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\Wind Speed.html">
+                                            <img src="C:\Users\Mattress IT\Desktop\DRC_School\Python\bootcamp\Homework 12\WeatherPy Homework\output\City Latitude vs. Wind Speed.png" alt="City Latitude vs. WInd Speed" style="width:175px;height:150px;border:0;">
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+
+<footer>
+    <div class="container-fluid">
+        <div style="background-color:rgb(71, 71, 71);">
+        <div style="color: #fff;">
+        <div class="row">
+        <div clasee="border: 5px;">
+        <div class="col-md-5"></div>
+
+        <div class="col-md-3">
+<br>
+    <p1>Darrin Cates Visualizations 2018</p1>
+<br>
+<br>
+</div>
+</div>
+</div>
+    <div class="col-md-4"></div>
+    
+    </div>
+    </div>
+    </div>
+</footer>
+
+
+</html>
